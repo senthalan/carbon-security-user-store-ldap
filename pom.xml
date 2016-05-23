@@ -82,11 +82,17 @@
                 <artifactId>org.wso2.carbon.security.caas</artifactId>
                 <version>${org.wso2.carbon.security.caas.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.wso2.carbon.datasources</groupId>
+                <artifactId>org.wso2.carbon.datasource.core</artifactId>
+                <version>${org.wso2.carbon.datasource.core.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <properties>
         <org.wso2.carbon.security.caas.version>1.0.0-SNAPSHOT</org.wso2.carbon.security.caas.version>
+        <org.wso2.carbon.datasource.core.version>1.0.0-SNAPSHOT</org.wso2.carbon.datasource.core.version>
         <carbon.feature.plugin.version>2.0.1</carbon.feature.plugin.version>
     </properties>
 
