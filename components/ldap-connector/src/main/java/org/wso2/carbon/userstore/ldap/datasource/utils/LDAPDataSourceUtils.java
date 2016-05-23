@@ -70,7 +70,7 @@ public class LDAPDataSourceUtils {
 
             return ldapDataSource;
         } catch (DataSourceException e) {
-            throw new DataSourceException("Error in loading LDAP configuration: " + e.getMessage(), e);
+            throw new DataSourceException("Error in loading LDAP configuration: ", e);
         }
     }
 

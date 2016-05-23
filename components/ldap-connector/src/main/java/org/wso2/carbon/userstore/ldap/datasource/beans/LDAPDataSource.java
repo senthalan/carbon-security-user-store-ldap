@@ -18,7 +18,7 @@ package org.wso2.carbon.userstore.ldap.datasource.beans;
 import java.util.Hashtable;
 
 /**
- * Bean class to hold LDAP connection details
+ * Bean class to hold LDAP connection details.
  */
 public class LDAPDataSource {
 

@@ -62,12 +62,9 @@ public class LDAPDataSourceReader implements DataSourceReader {
     @Override
     public Object createDataSource(String xmlConfiguration, boolean isDataSourceFactoryReference)
             throws DataSourceException {
-        LDAPDataSource dataSource = LDAPDataSourceUtils.buildConfiguration(xmlConfiguration);
-
         if (isDataSourceFactoryReference) {
             return null;
-        } else {
-            return dataSource;
         }
+        return LDAPDataSourceUtils.buildConfiguration(xmlConfiguration);
     }
 }
