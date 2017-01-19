@@ -31,9 +31,9 @@ public class LDAPDataSourceUtils {
     /**
      * Generate the configuration bean by reading the xml configuration.
      *
-     * @param xmlConfiguration String
-     * @return {@code }
-     * @throws DataSourceException
+     * @param xmlConfiguration configuration of the data source
+     * @return data source object created using xml configuration
+     * @throws DataSourceException if data source can't be created using xml configuration
      */
     public static LDAPDataSource buildConfiguration(String xmlConfiguration) throws DataSourceException {
         try {
