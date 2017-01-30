@@ -44,7 +44,7 @@ public class LDAPDataSourceReader implements DataSourceReader {
     /**
      * Return the type of the reader.
      *
-     * @return String
+     * @return the type of the reader
      */
     @Override
     public String getType() {
@@ -54,10 +54,10 @@ public class LDAPDataSourceReader implements DataSourceReader {
     /**
      * Creating the data source by reading the xml configuration.
      *
-     * @param xmlConfiguration             String
-     * @param isDataSourceFactoryReference boolean
-     * @return Object
-     * @throws DataSourceException
+     * @param xmlConfiguration configuration of the data source
+     * @param isDataSourceFactoryReference whether this requires the factory reference or not
+     * @return data source object created using xml configuration
+     * @throws DataSourceException if data source can't be created using xml configuration
      */
     @Override
     public Object createDataSource(String xmlConfiguration, boolean isDataSourceFactoryReference)
